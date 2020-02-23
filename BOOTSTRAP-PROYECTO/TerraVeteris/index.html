@@ -1,355 +1,569 @@
 <!DOCTYPE html>
-<html lang='es'>
-<head>
-	<title>TerraVeteris - Una nueva aventura</title>
-	<!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  
-	<link rel="stylesheet" href="main.css">
-</head>
-<body>
+<html lang="es">
+    
+    <head>
+        <title>TerraVeteris - Una nueva aventura</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<div class="navbar navbar-inverse navbar-static-top">
-		<div class="container">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        <div class="navbar navbar-dark bg-dark navbar-static-top navbar-expand-md">
+            <div class="container">	<a href="#" class="navbar-brand">
 
-		<div class="navbar-header">
-			<a href='#' class='navbar-brand'>
-				TerraVeteris - Una Nueva Aventura
-			</a>
-		</div>
+					TerraVeteris - Una Nueva Aventura
 
-	    <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
-			
-	      <li><a href='#'>Entradas</a></li>
-	      <li><a href='#'>Estaciones</a></li>
-	      <li>
-	      	<a data-target='#' data-toggle='dropdown'>
-	      		Sobre nosotros <span class="caret"></span>
-	      	</a>
-	      	<ul class='dropdown-menu'>
-	      		<li><a>Nuestra Historia</a></li>
-	      		<li><a>Contáctanos</a></li>
-						<li class="divider"></li>
-	      		<li><a>Foro</a></li>
-						<li class="divider"></li>
-	      		<li><a href='http://facebook.com/'>Facebook  <img src="facebook.png" /></a></li>
-	      		<li><a href='https://www.linkedin.com/in/pablo-vega-s%C3%A1nchez-1586b319b/'>LinkedIn  <img src="linke.png" /></a></li>
-	      	</ul>
-	      </li>
-		</ul>
-	  </div>
-	  <nav aria-label="breadcrumb">
-		<ol class="breadcrumb ">
-		  <li class="breadcrumb-item"><a href="#">UniversumVeteris</a></li>
-		  <li class="breadcrumb-item"><a href="#">TerraVeteris</a></li>
-		  <li class="breadcrumb-item active" aria-current="page">Viajes al centro de la Tierra</li>
-		</ol>
-	  </nav>
-	</div>
-
-
-  
-	 
-
-
-
-  <div class="container">
-
-	<div class="alert alert-warning" role="alert">
-		<h4 class="alert-heading">2 Días Restantes: 50% de Descuento</h4>
-		<p>Por el aniversario de la película Viaje al Centro de la Tierra (2008) te otorgamos un 50% en todos los viajes en nuestros ascensores subterráneos. <br><small> (Oferta no incluida para peruanos). </small></small></p>
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-	  </div>
-		<div class="row well well-lg">
-			<div class="col-md-6">
-				<h2>Descubre un nuevo mundo justo debajo tuyo</h2>
-				<p class="lead">Descubre la experiencia TerraVeteris desde uno de nuestros transportes más rápidos, cómos y eficaces</p>
-				<button type='button' class='btn btn-lg btn-default' href="#" data-toggle="popover" title="¡Lo Sentimos!" data-content="La página de términos y condiciones no esta disponible en este instante, solo debes saber que si sufres alguna mutilación o contusión en el proceso de transporte no será problema legal de la compañia UniversumVeteris! ¡Buen viaje!">Términos de Usos y Condiciones</button>
-				<button type='button' class='btn btn-lg btn-primary'> <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>Reserva entradas</a></button>
-			</div>
-			
-			<div class="col-md-6 col-xs-12">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-        
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-		<!-- UTILIDADES DE IMAGENES -->
-              <img src="lava.jpg" alt="Lava" class="img-thumbnail rounded mx-auto d-block">
+				</a>
+                <ul class="nav navbar-nav ml-auto collapse navbar-collapse">
+                    <li class="nav-item"><a href="#" class="nav-link">Entradas</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Estaciones</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a>Nuestra Historia</a>
+                            </li>
+                            <li class="dropdown-item"><a>Cont&#xE1;ctanos</a>
+                            </li>
+                            <li class="dropdown-divider dropdown-item"></li>
+                            <li class="dropdown-item"><a>Foro</a>
+                            </li>
+                            <li class="dropdown-divider dropdown-item"></li>
+                            <li class="dropdown-item"><a href="http://facebook.com/">Facebook <img src="facebook.png"></a>
+                            </li>
+                            <li class="dropdown-item"><a href="https://www.linkedin.com/in/pablo-vega-s%C3%A1nchez-1586b319b/">LinkedIn <img src="linke.png"></a>
+                            </li>
+                        </ul>
+                      </li>
+                </ul>
             </div>
-        
-            <div class="item">
-              <img src="cueva.png" alt="Cueva" class="img-thumbnail rounded mx-auto d-block">
-            </div>
-        
-            <div class="item">
-              <img src="alexelcapo.jpg" alt="Alexelcapo" class="img-thumbnail rounded mx-auto d-block">
-            </div>
-          </div>
-        
-          
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Siguiente</span>
-          </a>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item"><a href="#">UniversumVeteris</a></li>
+                    <li class="breadcrumb-item"><a href="#">TerraVeteris</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Viajes al centro de la Tierra</li>
+                </ol>
+            </nav>
         </div>
-			</div>
-		</div>
+        <div class="container">
+            <div class="alert alert-warning" role="alert">
+                	<h4 class="alert-heading">2 D&#xED;as Restantes: 50% de Descuento</h4>
+                <p>Por el aniversario de la pel&#xED;cula Viaje al Centro de la Tierra (2008)
+                    te otorgamos un 50% en todos los viajes en nuestros ascensores subterr&#xE1;neos.
+                    <br><small> (Oferta no incluida para peruanos).
 
-		<div class="row features row-eq-height ">
-			<div class="col-md-4 col-xs-12 col-xs-offset-1 col-sm-offset-0 panel panel-success " style="height: 330px">
-				<div class="panel-heading">
-				<i class='glyphicon glyphicon-shopping-cart'></i>
-				<h3>Reserva entradas con facilidad</h3>
-			</div>
-				<div class="panel-body">
-				<p class="text-justify">Incluso si viajas mañana, puedes reservar hoy. Disponemos de más de 500 ascensores al centro de la tierra repartidos por toda Europa
-		  <br>
-		  <!-- UTILIDADES DE TEXTO WRAP-->
-		  ¡Encuentra el tuyo <a href='https://www.google.com/maps/place/Bruh+City/@39.759099,-84.211473,17z/data=!4m5!3m4!1s0x8840815e6477bedb:0x14c573e2c2e4e14e!8m2!3d39.7590783!4d-84.211204' class='badge badge-primary text-wrap'> aquí</a>!
-		  </div>
-        </p>
+				</small>
+                </p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">	<span aria-hidden="true">&#xD7;</span>
+                </button>
+            </div>
+            <div class="row well well-lg">
+                <div class="col-lg-6">
+                    	<h2>Descubre un nuevo mundo justo debajo tuyo</h2>
+                    <p class="lead">Descubre la experiencia TerraVeteris desde uno de nuestros transportes
+                        m&#xE1;s r&#xE1;pidos, c&#xF3;mos y eficaces</p>
+                        <button type='button' class='btn btn-lg btn-default' href="#" data-toggle="popover"
+                        title="¡Lo Sentimos!"
+                        data-content="La página de términos y condiciones no esta disponible en este instante, solo debes saber que si sufres alguna mutilación o contusión en el proceso de transporte no será problema legal de la compañia UniversumVeteris! ¡Buen viaje!">Términos
+                        de Usos y Condiciones</button>
+                    <button type="button" class="btn btn-lg btn-primary"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Reserva entradas</a>
+                    </button>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active carousel-item">
+                                <!-- UTILIDADES DE IMAGENES -->
+                                <img src="lava.jpg" alt="Lava" class="img-thumbnail rounded mx-auto d-block">
+                            </div>
+                            <div class="item carousel-item">
+                                <img src="cueva.png" alt="Cueva" class="img-thumbnail rounded mx-auto d-block">
+                            </div>
+                            <div class="item carousel-item">
+                                <img src="alexelcapo.jpg" alt="Alexelcapo" class="img-thumbnail rounded mx-auto d-block">
+                            </div>
+                        </div>	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 
-			</div>
-			<!-- UTILIDADES DE TEXTO TEXT-JUSTIFY-->
-			<div class="col-md-4 col-xs-6 panel panel-info" style="height: 330px">
-				<div class="panel-heading">
-				<i class='glyphicon glyphicon-globe'></i>
-				<h3>Viaja a cualquier parte del mundo</h3>
-			</div>
-			<div class="panel-body">
-				<p class="text-justify">Disfruta de todos los biomas que el centro de la tierra ofrece, desde los Páramos de la Muerte Mortífera hasta la mítica guarida de Alejandro el Capo.
-          Tambíen puedes usar nuestro servicio para salir en cualquier país desde uno de nuestro ascensores subterráneos ¡Que no se diga que si excavas un hoyo no se puede llegar a China desde España!
-		</div>
-		</p>
-			</div>
+						<span class="glyphicon glyphicon-chevron-left"></span>
 
-			<div class="col-md-4 col-xs-6 panel panel-warning" style="height: 330px">
-				<div class="panel-heading">
-				<i class='glyphicon glyphicon-transfer'></i>
-				<h3>Sistemas de Teletransporte TerraVeteris&reg;</h3>
-			</div>
-				<div class="panel-body">
-				<p class="text-justify">Por el mejor precio, ¡Disfruta de nuestro nuevo sistema TerraVeteris&reg; de teletransporte de última generación! ¡El sistema consiste en la transferencia de memoria a una base de datos, la desintegración del cuerpo y la creación de uno nuevo mediante nuestra mejor impresora 3d, la TerraVeterisTP&reg; 3000, en el cual se implantrán tus memorias sin (probablemente) ningún problema! </p>			
-			</div>
-			</div>
+						<span class="sr-only">Anterior</span>
 
-		</div>
-		
-	</div>
-<!-- UTILIDADES EMBED -->
-	<div class="embed-responsive embed-responsive-16by9">
-		<iframe class="visible embed-responsive-item" src="TerraVeterisSample.mp4" allowfullscreen></iframe>
-	  </div>
+					</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
 
-	
-	
-	  
-<!-- UTILIDADES VISIBILIDAD -->
-	<div class='invisible quote'>
-		<div class="container">
-		  <blockquote>
-			<p> Frase célebre invisible</p>
-		  </blockquote>
-		</div>
-	  </div>
+						<span class="glyphicon glyphicon-chevron-right"></span>
 
-	  <table class="table table-hover table-dark">
-		<thead>
-		  <tr class="bg-primary">
-			<th scope="col">#</th>
-			<th scope="col">Viajes Más Reservados</th>
-			<th scope="col">Precio Base</th>
-		  </tr>
-		</thead>
-		<tbody>
-		  <tr class="bg-success">
-			<th scope="row">1</th>
-			<td>Guarida de Alejandro el Capo</td>
-			<td>14$</td>
-		  </tr>
-		  <tr class="bg-info">
-			<th scope="row">2</th>
-			<td>ToMordorLand</td>
-			<td>1499.99$</td>
-		  </tr>
-		  <tr class="bg-warning">
-			<th scope="row">3</th>
-			<td>Las Cuevas de los Habitantes de Reddit</td>
-			<td>69420$</td>
-		  </tr>
-		</tbody>
-	  </table>
-  
-	  
-		</div>
-	  </div>
-	  <div class='container'>
-		<div class='row'>
-		  <div class='col-md-8'>
-			<h2>¡Planea tu Viaje!</h2>
+						<span class="sr-only">Siguiente</span>
 
-			
-  
-			<ul class='nav nav-tabs'>
-			  <li><a href='#deals'>Descuentos</a></li>
-			  <li><a href='#forecast'>Recomendaciones</a></li>
-			</ul>
-  
-			<div class='tab-content'>
-			  <div class='tab-pane fade' id='deals'>
-				<div class="jumbotron jumbotron-fluid">
-					<div class="container">
-					  <h1>50$ DESCUENTO</h1>      
-					  <p>Por el aniversario de la película Viaje al Centro de la Tierra (2008) te otorgamos un 50% en todos los viajes en nuestros ascensores subterráneos. <br><small> (Oferta no incluida para peruanos). </small></small></p>
-					  <img src="TerraVeterisDescuento.jpg" alt="Descuento" class="img-thumbnail rounded mx-auto d-block">
-					</div>
-				  </div>
-				
-			  </div>
-			  <div class='tab-pane fade' id='forecast'>
-				<div class="form-group">
-					<select class="form-control" id="exampleFormControlSelect1">
-					  <option>Viaje de 12 horas</option>
-					  <option>Viaje de 24 horas</option>
-					  <option>Viaje de 48 horas</option>
-					</select>
-				  </div>
-				  <form>
-					<div class="form-row">
-					  <div class="col-7">
-						<input type="text" class="form-control" placeholder="Ciudad">
-					  </div>
-					  <div class="col">
-						<input type="text" class="form-control" placeholder="Estado">
-					  </div>
-					  <div class="col">
-						<input type="text" class="form-control" placeholder="Localidad">
-					  </div>
-					</div>
-				  </form>
-				<div class="input-group mb-3">
-					<div class="input-group-prepend">
-					  <span class="input-group-text">(14.00</span>
-					  <span class="input-group-text">$ mínimo)</span>
-					</div>
-					<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Dinero que deseas gastar">
-				  </div>
-			  </div>
-			</div>
-		  </div>
-		  <div class='col-md-3 col-md-offset-1'>
-			<div class='panel-group'>
-			  <div class='panel panel-success'>
-				<div class='panel-heading'>
-				  <h4 class='panel-title'>
-					<a data-toggle='collapse' data-parent='.panel-group' href='#systemsOperational'>All Systems Operational</a>
-				  </h4>
-				</div>
-				<div id='systemsOperational' class='panel-collapse collapse in'>
-				  <div class='panel-body'>
-					<p>All systems are operational</p>
-					<ul class='list-unstyled'>
-					  <li><i class='glyphicon glyphicon-ok'></i>  Transporters</li>
-					  <li><i class='glyphicon glyphicon-ok'></i>  Space Elevator</li>
-					  <li><i class='glyphicon glyphicon-ok'></i>  RocketBus</li>
-					</ul>
-				  </div>
-				</div>
-			  </div>
-  
-			
-  
-			  <div class='panel panel-danger'>
-				<div class='panel-heading'>
-				  <h4 class='panel-title'>
-					<a data-toggle='collapse' data-parent='.panel-group' href='#transportationWarning'>¡Valóranos!</a>
-				  </h4>
-				</div>
-				<div id='transportationWarning' class='panel-collapse collapse'>
-					<form>
-						<div class="form-group">
-						  <label for="exampleFormControlInput1">Email</label>
-						  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+					</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row features row-eq-height ">
+                <div class="col-lg-4 col-12 offset-1 offset-sm-0 card text-white bg-success "
+                style="height: 370px">
+                    <div class="card-header">	<i class="fa fa-shopping-cart"></i>
+                        	<h3>Reserva entradas con facilidad</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-justify">Incluso si viajas ma&#xF1;ana, puedes reservar hoy. Disponemos de m&#xE1;s
+                            de 500 ascensores al centro de la tierra repartidos por toda Europa
+                            <br>
+                            <!-- UTILIDADES DE TEXTO WRAP-->&#xA1;Encuentra el tuyo <a href="https://www.google.com/maps/place/Bruh+City/@39.759099,-84.211473,17z/data=!4m5!3m4!1s0x8840815e6477bedb:0x14c573e2c2e4e14e!8m2!3d39.7590783!4d-84.211204"
+                            class="tag tag-pill badge-pill badge-primary text-wrap"> aqu&#xED;</a>!</p>
+                    </div>
+                    <p></p>
+                </div>
+                <!-- UTILIDADES DE TEXTO TEXT-JUSTIFY-->
+                <div class="col-lg-4 col-6 card text-white bg-info" style="height: 370px">
+                    <div class="card-header">	<i class="fa fa-globe"></i>
+                        	<h3>Viaja a cualquier parte del mundo</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-justify">Disfruta de todos los biomas que el centro de la tierra ofrece, desde
+                            los P&#xE1;ramos de la Muerte Mort&#xED;fera hasta la m&#xED;tica guarida
+                            de Alejandro el Capo. Tamb&#xED;en puedes usar nuestro servicio para salir
+                            en cualquier pa&#xED;s desde uno de nuestro ascensores subterr&#xE1;neos
+                            &#xA1;Que no se diga que si excavas un hoyo no se puede llegar a China
+                            desde Espa&#xF1;a!</p>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-lg-4 col-6 card text-white bg-warning" style="height: 370px">
+                    <div class="card-header">	<i class="fa fa-magic"></i>
+                        	<h3>Sistemas de Teletransporte TerraVeteris&#xAE;</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-justify">&#xA1;El sistema consiste
+                            en la transferencia de memoria a una base de datos, la desintegraci&#xF3;n
+                            del cuerpo y la creaci&#xF3;n de uno nuevo mediante nuestra mejor impresora
+                            3d, la TerraVeterisTP&#xAE; 3000, en el cual se implantr&#xE1;n tus memorias
+                            sin (probablemente) ning&#xFA;n problema!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- UTILIDADES EMBED -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="visible embed-responsive-item" src="TerraVeterisSample.mp4"
+            allowfullscreen></iframe>
+        </div>
+        <!-- UTILIDADES VISIBILIDAD -->
+        <div class="invisible quote">
+            <div class="container">
+                <blockquote>
+                    <p>Frase c&#xE9;lebre invisible</p>
+                </blockquote>
+            </div>
+        </div>
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr class="bg-primary">
+                    <th scope="col">#</th>
+                    <th scope="col">Viajes M&#xE1;s Reservados</th>
+                    <th scope="col">Precio Base</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-success">
+                    <th scope="row">1</th>
+                    <td>Guarida de Alejandro el Capo</td>
+                    <td>14$</td>
+                </tr>
+                <tr class="bg-info">
+                    <th scope="row">2</th>
+                    <td>ToMordorLand</td>
+                    <td>1499.99$</td>
+                </tr>
+                <tr class="bg-warning">
+                    <th scope="row">3</th>
+                    <td>Las Cuevas de los Habitantes de Reddit</td>
+                    <td>69420$</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                        <h2>&#xA1;Planea tu Viaje!</h2>
+                        
+                <!------------------------------------------------------>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#recomendaciones">Recomendaciones</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#equipo">Nuestro equipo</a>
+                      </li>
+                  </ul>
+                  
+                  <div class="container-fluid">
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane fade in active" id="home">
+                        <div class="jumbotron jumbotron-fluid">
+							<div class="container">
+								<h1>50$ DESCUENTO</h1>
+								<p>Por el aniversario de la película Viaje al Centro de la Tierra (2008) te otorgamos un
+									50% en todos los viajes en nuestros ascensores subterráneos. <br><small> (Oferta no
+										incluida para peruanos). </small></small></p>
+								<img src="TerraVeterisDescuento.jpg" alt="Descuento"
+									class="img-thumbnail rounded mx-auto d-block">
+							</div>
 						</div>
-						<div class="form-group">
-						  <label for="exampleFormControlSelect1">Valora la experiencia TerraVeteris</label>
-						  <select class="form-control" id="exampleFormControlSelect1">
-							<option>Me ha gustado mucho</option>
-							<option>Me ha gustado muy mucho</option>
-							<option>Me ha gustado en todos los sentidos</option>
-							<option>Me ha gustado al nivel de producir múltiples orgasmos masivos</option>
-							<option>Meh..</option>
-						  </select>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="recomendaciones">
+                        <div class="form-group">
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>Viaje de 12 horas</option>
+								<option>Viaje de 24 horas</option>
+								<option>Viaje de 48 horas</option>
+							</select>
 						</div>
-						<div class="form-group">
-						  <label for="exampleFormControlTextarea1">¡Cuéntanos tu experiencia TerraVeteris!</label>
-						  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<form>
+							<div class="form-row">
+								<div class="col-7">
+									<input type="text" class="form-control" placeholder="Ciudad">
+								</div>
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Estado">
+								</div>
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Localidad">
+								</div>
+							</div>
+						</form>
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">(14.00</span>
+								<span class="input-group-text">$ mínimo)</span>
+							</div>
+							<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+								placeholder="Dinero que deseas gastar">
 						</div>
-					  </form>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	  
-  
-			<div class='col-md-3 col-md-offset-1 col-sm-4 col-xs-6'>
-			  <h4>Contáctanos</h4>
-			  <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
-				<div class="btn-group" role="group">
-					<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  EMAILS
-					</button>
-					<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-					  <a class="dropdown-item" href="#">Thorgrim (DIRECTOR) </a>
-					  <br>
-					  <a class="dropdown-item" href="#">Manfredo (RECURSOS HUMANOS)</a>
-					</div>
-				  </div>
-  <button type="button" class="btn btn-secondary">Nº Tlf: 69420666</button>
-  <button type="button" class="btn btn-secondary">Penépolis C/Memelandia nº123</button>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="contact">
+                        <div data-spy="scroll" data-target=".navbar" data-offset="50">
+							<nav class="navbar navbar-inverse navbar-fixed-top">
+								<div class="container-fluid">
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse"
+											data-target="#myNavbar">
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+										<a class="navbar-brand" href="#">WebSiteName</a>
+									</div>
+									<div>
+										<div class="collapse navbar-collapse" id="myNavbar">
+											<ul class="nav navbar-nav">
+												<li><a href="#section1">Section 1</a></li>
+												<li><a href="#section2">Section 2</a></li>
+												<li><a href="#section3">Section 3</a></li>
+												<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+														href="#">Section 4 <span class="caret"></span></a>
+													<ul class="dropdown-menu">
+														<li><a href="#section41">Section 4-1</a></li>
+														<li><a href="#section42">Section 4-2</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</nav>
 
-  
-</div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-  
-	  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-	  <!-- Latest compiled and minified JavaScript -->
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	  <script>
-		$(function() {
-		  $('.nav-tabs a').click(function (e) {
-			e.preventDefault();
-			$(this).tab('show');
-		  });
-		});
-	  </script>
-	  <script>
-		$(document).ready(function(){
-			$('[data-toggle="popover"]').popover();   
-		});
-		</script>
-		
-	</body>
-  </html>
+							<div id="section1" class="container-fluid">
+								<h1>Section 1</h1>
+								<p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+									scroll this section and look at the navigation bar while scrolling!</p>
+								<p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+									scroll this section and look at the navigation bar while scrolling!</p>
+							</div>
+							<div id="section2" class="container-fluid">
+								<h1>Section 2</h1>
+								<p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+									scroll this section and look at the navigation bar while scrolling!</p>
+								<p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+									scroll this section and look at the navigation bar while scrolling!</p>
+							</div>
+							<div id="section3" class="container-fluid">
+								<h1>Section 3</h1>
+								<p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+									scroll this section and look at the navigation bar while scrolling!</p>
+								<p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+									scroll this section and look at the navigation bar while scrolling!</p>
+							</div>
+							<div id="section41" class="container-fluid">
+								<h1>Section 4 Submenu 1</h1>
+								<p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+									scroll this section and look at the navigation bar while scrolling!</p>
+								<p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+									scroll this section and look at the navigation bar while scrolling!</p>
+							</div>
+							<div id="section42" class="container-fluid">
+								<h1>Section 4 Submenu 2</h1>
+								<p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+									scroll this section and look at the navigation bar while scrolling!</p>
+								<p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+									scroll this section and look at the navigation bar while scrolling!</p>
+							</div>
 
+							<div class="container">
+								<h2>Stretched Link in Card</h2>
+								<p>Add the .stretched-link class to a link inside the card, and it will make the whole card clickable (the card will act as a link):</p>
+								<div class="card" style="width:400px">
+								  <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+								  <div class="card-body">
+									<h4 class="card-title">John Doe</h4>
+									<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+									<a href="#" class="btn btn-primary stretched-link">See Profile</a>
+								  </div>
+								</div>
+							  </div>
+						</div>
+                      </div>
+
+                      <div role="tabpanel" class="tab-pane fade in active" id="equipo">
+                        <ul class="list-unstyled">
+                            <li class="media">
+                              <img class="mr-3" src="..." alt="Generic placeholder image">
+                              <div class="media-body">
+                                <h5 class="mt-0 mb-1">List-based media object</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                              </div>
+                            </li>
+                            <li class="media my-4">
+                              <img class="mr-3" src="..." alt="Generic placeholder image">
+                              <div class="media-body">
+                                <h5 class="mt-0 mb-1">List-based media object</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                              </div>
+                            </li>
+                            <li class="media">
+                              <img class="mr-3" src="..." alt="Generic placeholder image">
+                              <div class="media-body">
+                                <h5 class="mt-0 mb-1">List-based media object</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                              </div>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    
+                <div class="col-lg-3 offset-md-1">
+                    <div class="">
+                        <div class="card text-white bg-success">
+                            <div class="card-header">
+                                	<h4 class="card-title">
+
+						<a data-toggle="collapse" data-parent=".panel-group" href="#systemsOperational">Sistemas
+
+							operativos</a>
+
+					</h4>
+                            </div>
+                            <div id="systemsOperational" class="panel-collapse collapse show">
+                                <div class="card-body">
+                                    <p>&#xA1;Transportadores Inactivos!</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-times"></i> Transportadores
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+                                                  </div>
+                                        </li>
+                                        <li><i class="fa fa-check"></i>Ascensores subterr&#xE1;neos</li>
+                                        <li><i class="fa fa-check"></i>BajoBus</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-warning">
+                            <div class="card-header">
+                                	<h4 class="card-title">
+
+						<a data-toggle="collapse" data-parent=".panel-group" href="#weatherAlert">Novedades</a>
+
+					</h4>
+                            </div>
+                            <div id="weatherAlert" class="panel-collapse collapse">
+                                <div>
+                                    <p>Podr&#xE1;s encontrar las novedades en nuestro sistema de transportes
+                                        en nuestros Foros</p>
+                                    <ul class="list-group" style="color: black;">
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Inbox
+                                        <span class="badge badge-primary badge-pill">12</span>
+                                      </li>
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Ads
+                                        <span class="badge badge-primary badge-pill">50</span>
+                                      </li>
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Junk
+                                        <span class="badge badge-primary badge-pill">99</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-danger">
+                            <div class="card-header">
+                                	<h4 class="card-title">
+
+						<a data-toggle="collapse" data-parent=".panel-group" href="#transportationWarning">&#xA1;Val&#xF3;ranos!</a>
+
+					</h4>
+                            </div>
+                            <div id="transportationWarning" class="panel-collapse collapse">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Email</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="nombre@ejemplo.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Valora la experiencia TerraVeteris</label>
+                                        <select class="form-control"
+                                        id="exampleFormControlSelect1">
+                                            <option>Me ha gustado mucho</option>
+                                            <option>Me ha gustado muy mucho</option>
+                                            <option>Me ha gustado en todos los sentidos</option>
+                                            <option>Me ha gustado al nivel de producir m&#xFA;ltiples orgasmos masivos</option>
+                                            <option>Meh..</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">&#xA1;Cu&#xE9;ntanos tu experiencia TerraVeteris!</label>
+                                        <textarea class="form-control"
+                                        id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Anterior</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">Siguiente</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6">
+                            	<h4>Who We Are</h4>
+                            <p><i>Blasting Off With Bootstrap</i> is the fastest way to space. <a href="tickets.html">Book your
+
+							ticket today</a>!</p>
+                            <p><a href="about.html">More About Us <i class="fa fa-long-arrow-right"></i></a>
+                            </p>
+                        </div>
+                        <div class="offset-md-1 col-md-2 col-6">
+                            	<h4>Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="/">Home</a>
+                                </li>
+                                <li><a href="tickets.html">Tickets</a>
+                                </li>
+                                <li><a href="stations.html">Stations</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix d-block d-sm-none"></div>
+                        <div class="col-md-2 col-6">
+                            	<h4>Stay in Touch</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="about.html">About</a>
+                                </li>
+                                <li><a href="contact.html">Contact Us</a>
+                                </li>
+                                <li><a href="/blog">Blog</a>
+                                </li>
+                                <li><a href="http://twitter.com/codeschool">Twitter</a>
+                                </li>
+                                <li><a href="http://facebook.com/codeschool">Facebook</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='col-md-3 col-md-offset-1 col-sm-4 col-xs-6'>
+                            <h4>Contáctanos</h4>
+                            <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+                                <div class="btn-group" role="group">
+                                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        EMAILS
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#">Thorgrim (DIRECTOR) </a>
+                                        <br>
+                                        <a class="dropdown-item" href="#">Manfredo (RECURSOS HUMANOS)</a>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-secondary">Nº Tlf: 69420666</button>
+                                <button type="button" class="btn btn-secondary">Penépolis C/Memelandia nº123</button>
+        
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Latest compiled and minified JavaScript -->
+		</div>
+		<!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+    </script>
+    </body>
+
+</html>
 
 	
