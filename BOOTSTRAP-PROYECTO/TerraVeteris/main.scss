@@ -1,0 +1,166 @@
+@import 'estilos';
+
+body {
+	font: 100% Helvetica, sans-serif;
+	color: #333;
+}
+  
+  
+.inverse  {
+	background-color: #333;
+	color: white;
+}
+  
+  
+
+.features .glyphicon {
+	font-size: 32px;
+}
+
+
+.footer {
+	background-color: #333;
+	color: #333;
+}
+
+
+a:link {
+    color: #00CED1;
+	text-decoration: none;
+}
+
+
+img {
+	max-width: 100%;
+}
+	
+
+.btn-group-vertical button{
+		background-color:rgb(64, 191, 233);
+}
+	
+
+	.progress-striped.active .progress-bar {
+		-webkit-animation: progress-bar-stripes 2s linear infinite !important;
+		-o-animation: progress-bar-stripes 2s linear infinite !important;
+		animation: progress-bar-stripes 2s linear infinite !important;
+
+	}
+	
+
+	#scrollstyle{
+		position: relative;
+	}
+	  
+
+ul.nav-pills {
+  top: 20px;
+}
+
+div.col-8 div {
+  height: 200px;
+}
+
+//
+
+%links {
+	border: 1px solid #ccc;
+	padding: 10px;
+	color: #333;
+  }
+  
+  
+  .list-unstyled{
+	@extend %links;
+  }
+  
+  .form-group {
+	@extend %links;
+	border-color: lightblue;
+  }
+
+  //
+
+  @mixin square($p, $m) {
+	padding: $p;
+	margin: $m;
+	
+  }
+  
+  .form-check-label {
+	@include square(-20px, -10px);
+  }
+  
+  .close {
+	@include square(-30px, -10px);
+  }
+
+  .checkbox {
+	@include square(10px, 10px);
+	border-right: 10px;
+  }
+
+// 
+$variable-red: #cc0000;
+$title-font: normal 24px/1.5 'Open Sans', sans-serif;
+
+.nofunciona {
+  padding: 10 15px;
+  color: $variable-red;
+}
+
+.progress-bar{
+  background-color: darken($variable-red,10%);
+}
+
+h1.title {
+	font: $title-font;
+  }
+
+  $body: blue;
+body {  
+  @if $body == white {  
+    color: black;  
+  } @else if $body == black {  
+    color: white;  
+  } @else if $body == blue {  
+    color: black;  
+}
+}
+
+@for $i from 8 through 1 {  
+	$width: percentage($i/8);
+		.col-#{$i} { width: $width; 
+		}  
+   }
+
+//
+
+$buttons: (
+  error: (#f65b62, rgb(255, 255, 255)),
+  success: (#4c9ae4, rgb(255, 255, 255)),
+  warning: (#f1bb45, rgb(255, 255, 255))
+);
+ 
+.m-button {
+  display: inline-block;
+  padding: .5em;
+  background: #ccc;
+  color: #666;
+   
+  @each $name, $colors in $buttons {
+    $bgcolor: nth($colors, 1);
+    $fontcolor: nth($colors, 2);
+     
+    &--#{$name} {
+      background-color: $bgcolor;
+      color: $fontcolor;
+    }  
+  }
+}
+
+
+
+	
+
+

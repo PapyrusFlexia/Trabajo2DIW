@@ -1,21 +1,123 @@
-.features .glyphicon{
-	font-size: 32px;
-}
+code {
+  padding: .25em;
+  line-height: 0; }
 
-.footer{
-	background-color: #333;
-	color: #fff;
-}
+ul, ol {
+  text-align: left; }
+  ul ul, ol ul, ul ol, ol ol {
+    padding-bottom: 0;
+    padding-left: 0; }
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333; }
+
+.inverse {
+  background-color: #333;
+  color: white; }
+
+.features .glyphicon {
+  font-size: 32px; }
+
+.footer {
+  background-color: #333;
+  color: #333; }
 
 a:link {
-    color: #00CED1;
-    text-decoration: none;
-}
+  color: #00CED1;
+  text-decoration: none; }
 
 img {
-	max-width: 100%;
-	}
+  max-width: 100%; }
 
-.btn-group-vertical button{
-		background-color:rgb(64, 191, 233);
-	}
+.btn-group-vertical button {
+  background-color: #40bfe9; }
+
+.progress-striped.active .progress-bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite !important;
+  -o-animation: progress-bar-stripes 2s linear infinite !important;
+  animation: progress-bar-stripes 2s linear infinite !important; }
+
+#scrollstyle {
+  position: relative; }
+
+ul.nav-pills {
+  top: 20px; }
+
+div.col-8 div {
+  height: 200px; }
+
+.list-unstyled, .form-group {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.form-group {
+  border-color: lightblue; }
+
+.form-check-label {
+  padding: -20px;
+  margin: -10px; }
+
+.close {
+  padding: -30px;
+  margin: -10px; }
+
+.checkbox {
+  padding: 10px;
+  margin: 10px;
+  border-right: 10px; }
+
+.nofunciona {
+  padding: 10 15px;
+  color: #cc0000; }
+
+.progress-bar {
+  background-color: #990000; }
+
+h1.title {
+  font: normal 24px/1.5 "Open Sans", sans-serif; }
+
+body {
+  color: black; }
+
+.col-8 {
+  width: 100%; }
+
+.col-7 {
+  width: 87.5%; }
+
+.col-6 {
+  width: 75%; }
+
+.col-5 {
+  width: 62.5%; }
+
+.col-4 {
+  width: 50%; }
+
+.col-3 {
+  width: 37.5%; }
+
+.col-2 {
+  width: 25%; }
+
+.col-1 {
+  width: 12.5%; }
+
+.m-button {
+  display: inline-block;
+  padding: .5em;
+  background: #ccc;
+  color: #666; }
+  .m-button--error {
+    background-color: #f65b62;
+    color: white; }
+  .m-button--success {
+    background-color: #4c9ae4;
+    color: white; }
+  .m-button--warning {
+    background-color: #f1bb45;
+    color: white; }
+
+/*# sourceMappingURL=main.css.map */

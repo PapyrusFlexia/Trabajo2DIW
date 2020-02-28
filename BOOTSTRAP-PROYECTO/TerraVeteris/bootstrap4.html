@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <title>TerraVeteris - Una nueva aventura</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <script src="script.js" defer></script>
+    </head>
+    
+    <body>
+        <div class="navbar navbar-dark bg-dark navbar-static-top navbar-expand-md">
+            <div class="container"> <img src="ICONO.png">	<a href="" class="navbar-brand">
+
+					TerraVeteris - Una Nueva Aventura
+
+				</a>
+                <ul class="nav navbar-nav ml-auto collapse navbar-collapse">
+                    <li class="nav-item"><a href="" class="nav-link">Entradas</a>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link">Estaciones</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a>Nuestra Historia</a>
+                            </li>
+                            <li class="dropdown-item"><a>Cont&#xE1;ctanos</a>
+                            </li>
+                            <li class="dropdown-divider dropdown-item"></li>
+                            <li class="dropdown-item"><a>Foro</a>
+                            </li>
+                            <li class="dropdown-divider dropdown-item"></li>
+                            <li class="dropdown-item"><a href="http://facebook.com/">Facebook <img src="facebook.png"></a>
+                            </li>
+                            <li class="dropdown-item"><a href="https://www.linkedin.com/in/pablo-vega-s%C3%A1nchez-1586b319b/">LinkedIn <img src="linke.png"></a>
+                            </li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item"><a href="">UniversumVeteris</a></li>
+                    <li class="breadcrumb-item"><a href="">TerraVeteris</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Viajes al centro de la Tierra</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="alert alert-warning" role="alert">
+                	<h4 class="alert-heading">2 D&#xED;as Restantes: 50% de Descuento</h4>
+                <p>Por el aniversario de la pel&#xED;cula Viaje al Centro de la Tierra (2008)
+                    te otorgamos un 50% de desucento en todos los viajes en nuestros ascensores subterr&#xE1;neos.
+                    <br><small> (Oferta no incluida para peruanos).
+
+				</small>
+                </p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">	<span aria-hidden="true">&#xD7;</span>
+                </button>
+            </div>
+            <div class="row well well-lg">
+                <div class="col-lg-6">
+                    	<h2>Descubre un nuevo mundo justo debajo tuyo</h2>
+                    <p class="lead">Descubre la experiencia TerraVeteris desde uno de nuestros transportes
+                        m&#xE1;s r&#xE1;pidos, c&#xF3;mos y eficaces</p>
+                        <button type='button' class='btn btn-lg btn-default' href="" data-toggle="popover"
+                        title="¡Lo Sentimos!"
+                        data-content="La página de términos y condiciones no esta disponible en este instante, solo debes saber que si sufres alguna mutilación o contusión en el proceso de transporte no será problema legal de la compañia UniversumVeteris! ¡Buen viaje!">Términos
+                        de Usos y Condiciones</button>
+                    <button type="button" class="btn btn-lg btn-primary"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Reserva entradas</a>
+                    </button>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div id="carrusel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carrusel" data-slide-to="1"></li>
+                            <li data-target="#carrusel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active carousel-item">
+                                <!-- UTILIDADES DE IMAGENES -->
+                                <img src="lava.jpg" alt="Lava" class="img-thumbnail rounded mx-auto d-block">
+                            </div>
+                            <div class="item carousel-item">
+                                <img src="cueva.png" alt="Cueva" class="img-thumbnail rounded mx-auto d-block">
+                            </div>
+                            <div class="item carousel-item">
+                                <img src="alexelcapo.jpg" alt="Alexelcapo" class="img-thumbnail rounded mx-auto d-block">
+                            </div>
+                        </div>	<a class="left carousel-control" href="#carrusel" data-slide="prev">
+
+						<span class="glyphicon glyphicon-chevron-left"></span>
+
+						<span class="sr-only">Anterior</span>
+
+					</a>
+	<a class="right carousel-control" href="#carrusel" data-slide="next">
+
+						<span class="glyphicon glyphicon-chevron-right"></span>
+
+						<span class="sr-only">Siguiente</span>
+
+					</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row features row-eq-height ">
+                <div class="col-lg-4 col-12 offset-1 offset-sm-0 card text-white bg-success "
+                style="height: 370px">
+                    <div class="card-header">	<i class="fa fa-shopping-cart"></i>
+                        	<h3>Reserva entradas con facilidad</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-justify">Incluso si viajas ma&#xF1;ana, puedes reservar hoy. Disponemos de m&#xE1;s
+                            de 500 ascensores al centro de la tierra repartidos por toda Europa
+                            <br>
+                            <!-- UTILIDADES DE TEXTO WRAP-->&#xA1;Encuentra el tuyo <a href="https://www.google.com/maps/place/Bruh+City/@39.759099,-84.211473,17z/data=!4m5!3m4!1s0x8840815e6477bedb:0x14c573e2c2e4e14e!8m2!3d39.7590783!4d-84.211204"
+                            class="tag tag-pill badge-pill badge-primary text-wrap"> aqu&#xED;</a>!</p>
+                    </div>
+                    <p></p>
+                </div>
+                <!-- UTILIDADES DE TEXTO TEXT-JUSTIFY-->
+                <div class="col-lg-4 col-6 card text-white bg-info" style="height: 370px">
+                    <div class="card-header">	<i class="fa fa-globe"></i>
+                        	<h3>Viaja a cualquier parte del mundo</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-justify">Disfruta de todos los biomas que el centro de la tierra ofrece, desde
+                            los P&#xE1;ramos de la Muerte Mort&#xED;fera hasta la m&#xED;tica guarida
+                            de Alejandro el Capo. Tamb&#xED;en puedes usar nuestro servicio para salir
+                            en cualquier pa&#xED;s desde uno de nuestro ascensores subterr&#xE1;neos
+                            &#xA1;Que no se diga que si excavas un hoyo no se puede llegar a China
+                            desde Espa&#xF1;a!</p>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-lg-4 col-6 card text-white bg-warning" style="height: 370px">
+                    <div class="card-header">	<i class="fa fa-magic"></i>
+                        	<h3>Sistemas de Teletransporte TerraVeteris&#xAE;</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-justify">&#xA1;El sistema consiste
+                            en la transferencia de memoria a una base de datos, la desintegraci&#xF3;n
+                            del cuerpo y la creaci&#xF3;n de uno nuevo mediante nuestra mejor impresora
+                            3d, la TerraVeterisTP&#xAE; 3000, en el cual se implantr&#xE1;n tus memorias
+                            sin (probablemente) ning&#xFA;n problema!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- UTILIDADES EMBED -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="visible embed-responsive-item" src="TerraVeterisSample.mp4"
+            allowfullscreen></iframe>
+        </div>
+        <!-- UTILIDADES VISIBILIDAD -->
+        <div class="invisible quote">
+            <div class="container">
+                <blockquote>
+                    <p>Frase c&#xE9;lebre invisible</p>
+                </blockquote>
+            </div>
+        </div>
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr class="bg-primary">
+                    <th scope="col">#</th>
+                    <th scope="col">Viajes M&#xE1;s Reservados</th>
+                    <th scope="col">Precio Base</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-success">
+                    <th scope="row">1</th>
+                    <td>Guarida de Alejandro el Capo</td>
+                    <td>14$</td>
+                </tr>
+                <tr class="bg-info">
+                    <th scope="row">2</th>
+                    <td>ToMordorLand</td>
+                    <td>1499.99$</td>
+                </tr>
+                <tr class="bg-warning">
+                    <th scope="row">3</th>
+                    <td>Las Cuevas de los Habitantes de Reddit</td>
+                    <td>69420$</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container sistemas-transporte">
+            <div class="row">
+                <div class="col-lg-10 offset-md-1">
+                    	<h2>Nuestros sistemas de transporte</h2>
+                    <p>Aprende sobre nuestro transportes y elige el que sea más asequible y menos peligroso para ti.</p>
+                </div>
+            </div>
+            <div class="row text-xs-center">
+                <div class="transportador col-lg-3 offset-md-1 well card bg-faded p-1 mb-3">
+                    	<h3>Transportador</h3>
+                    <ul class="list-unstyled">
+                        <li>8 segundos de viaje</li>
+                        <li>Probabilidad de muerte de 1 en 7,593 ¡Eso es menos de un 0.0002%!</li>
+                        <li>¡Solo 19.99€!</li>
+                    </ul>
+                    <p>
+                        <button class="btn m-button--error"><i class="glyphicon glyphicon-transfer"></i> ¡Hacia el infinito y más alla!</button>
+                    </p>
+                </div>
+                <div class="terraelevador col-lg-3 offset-md-1 well card bg-faded p-1 mb-3">
+                    	<h3>Ascensor subterráneo</h3>
+                    <ul class="list-unstyled">
+                        <li>8 horas de viaje escénico</li>
+                        <li>Solo 1 muerte horrorífica de cada 12,456</li>
+                        <li>¡Solo 49.99€ si compras ahora!</li>
+                    </ul>
+                    <p>
+                        <button class="btn m-button--success "><i class="glyphicon glyphicon-sort"></i> ¡ Abordar el Elevador!</button>
+                    </p>
+                </div>
+                <div class="terrabus col-lg-3 offset-md-1 well card bg-faded p-1 mb-3">
+                    	<h3>BajoBus</h3>
+                    <ul class="list-unstyled">
+                        <li>8 minutos de viaje escénico</li>
+                        <li>Increíble probabilidad de morir de 1 de cada 100.000</li>
+                        <li>¡79.99€ si te lanzas hoy a la aventura! </li>
+                    </ul>
+                    <p>
+                        <button class="btn m-button--warning"><i class="glyphicon glyphicon-plane"></i> ¡Viajar hacia la aventura de tu vida!</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                        <h2>&#xA1;Planea tu Viaje!</h2>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#ofertas">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#recomendaciones">Recomendaciones</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#pp">Política de privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#equipo">Nuestro equipo</a>
+                      </li>
+                  </ul>
+                  
+                  <div class="container-fluid">
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane fade in active" id="ofertas">
+                        <div class="jumbotron jumbotron-fluid">
+							<div class="container">
+								<h1>50$ DESCUENTO</h1>
+								<p>Por el aniversario de la película Viaje al Centro de la Tierra (2008) te otorgamos un
+									50% en todos los viajes en nuestros ascensores subterráneos. <br><small> (Oferta no
+										incluida para peruanos). </small></small></p>
+								<img src="TerraVeterisDescuento.jpg" alt="Descuento"
+									class="img-thumbnail rounded mx-auto d-block">
+							</div>
+						</div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="recomendaciones">
+                        <form class="needs-validation" novalidate>
+  
+                        <div class="form-group">
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>Viaje de 12 horas</option>
+								<option>Viaje de 24 horas</option>
+								<option>Viaje de 48 horas</option>
+							</select>
+                        </div>
+						<form>
+							<div class="form-row">
+								<div class="col-7">
+									<input type="text" class="form-control" placeholder="Ciudad">
+								</div>
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Estado">
+								</div>
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Localidad">
+								</div>
+							</div>
+						</form>
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">(14.00</span>
+								<span class="input-group-text">$ mínimo)</span>
+							</div>
+							<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+                                placeholder="Dinero que deseas gastar">
+                                <div class="container">
+                                    <br>
+                                    <button type="button" id="btnModal" class="btn btn-primary" data-toggle="modal" data-target="#modalRecomendaciones">
+                                      Conseguir la mejor oferta en base a tus preferencias
+                                    </button>
+                                  
+                                    <!-- The Modal -->
+                                    <div class="modal" id="modalRecomendaciones">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        
+                                          <!-- Modal Header -->
+                                          <div class="modal-header">
+                                            <h4 class="modal-title">¡Atención! Estas a punto de enviar información personal. <br> ¿Consientes todo lo que podemos hacer con ella?</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          </div>
+                                          
+                                          <!-- Modal body -->
+                                          <div class="modal-body">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">&nbsp; He leído y comprendido la política de privacidad</label>
+                                            <br>
+                                            <button href="#" data-toggle="tooltip" title="Acepta la política de privacidad">Enviar mis datos personales</button>
+                                          </div> 
+
+                                          <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                  
+						</div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="pp">
+                    <div data-spy="scroll" data-target="#myScrollspy" data-offset="1" id="scrollstyle">
+                        <div class="container-fluid">
+                            <div class="row">
+                              <nav class="col-sm-3 col-4" id="myScrollspy">
+                                <ul class="nav nav-pills flex-column">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#section1">Compromiso</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#section2">Datos personales</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Protección y <br>Precaución</a>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#section31">Protección</a>
+                                      <a class="dropdown-item" href="#section32">Precaución</a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </nav>
+                              <div class="col-sm-9 col-8">
+                                <div id="section1" class="text-light bg-primary">    
+                                  <h1>Nuestro compromiso</h1>
+                                  <p>UniversumVeteris se compromete a respetar tu privacidad y a proteger tus datos personales.
+
+                                    Seremos totalmente transparentes acerca de los datos que recabemos y el uso que hagamos de ellos.
+                                    
+                                    Utilizaremos los datos que nos proporciones para los fines descritos en nuestra Política de Privacidad, entre los que se encuentra prestarte los servicios que has solicitado y mejorar tu experiencia con UniversumVeteris.
+                            </p>
+                                </div>
+                                <div id="section2" class="text-light bg-secondary"> 
+                                  <h1>¿Que entendemos por datos personales?</h1>
+                                  <p>Se entiende por datos personales aquellos datos que te identifican o podrían emplearse para ello, como por ejemplo tu nombre, datos de contacto y tu historial de viajes y compras. También pueden incluir información sobre cómo utilizas nuestro sitio web y las aplicaciones para el móvil.</p>
+                                </div>        
+                                <div id="section31" class="text-light bg-info">         
+                                  <h1>Proteger datos personales</h1>
+                                  <p>No compartas tu código de reserva o localizador
+
+                                    Cuando realizas una reserva, se te proporciona un código de reserva (también conocido como PNR o Registro de Pasajero). Esta referencia aparecerá en el correo electrónico de confirmación o en el billete de cada uno de los pasajeros de tu reserva.</p>
+                                </div>      
+                                <div id="section32" class="text-light bg-info">         
+                                  <h1>Actúa con precaución</h1>
+                                  <p>Existe una práctica de fraude a través de internet conocida como “Phishing”, que consiste en la obtención ilegal de datos personales mediante engaño. Se envían correos electrónicos no solicitados a personas incluidas en listados obtenidos ilegalmente por terceras partes, y se pide a sus destinatarios que introduzcan o confirmen datos bancarios o contraseñas en una web clonada o falsa.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+
+                      <div role="tabpanel" class="tab-pane fade in active" id="equipo">
+                        <ul class="list-unstyled">
+                            <li class="media">
+                              <img class="mr-3" src="..." alt="Generic placeholder image">
+                              <div class="media-body">
+                                <h5 class="mt-0 mb-1">List-based media object</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                              </div>
+                            </li>
+                            <li class="media my-4">
+                              <img class="mr-3" src="..." alt="Generic placeholder image">
+                              <div class="media-body">
+                                <h5 class="mt-0 mb-1">List-based media object</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                              </div>
+                            </li>
+                            <li class="media">
+                              <img class="mr-3" src="..." alt="Generic placeholder image">
+                              <div class="media-body">
+                                <h5 class="mt-0 mb-1">List-based media object</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                              </div>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    
+                <div class="col-lg-3 offset-md-1">
+                    <div class="">
+                        <div class="card text-white bg-success">
+                            <div class="card-header">
+                                	<h4 class="card-title">
+
+						<a data-toggle="collapse" data-parent=".panel-group" href="#sistemasOperativos">Sistemas
+
+							operativos</a>
+
+					</h4>
+                            </div>
+                            <div id="sistemasOperativos" class="panel-collapse collapse show">
+                                <div class="card-body">
+                                    <p>&#xA1;Transportadores Inactivos!</p>
+                                    <ul class="list-unstyled">
+                                        <li class="nofunciona"><i class="fa fa-times"></i> Transportadores
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+                                                  </div>
+                                        </li>
+                                        <li><i class="fa fa-check"></i>Ascensores subterr&#xE1;neos</li>
+                                        <li><i class="fa fa-check"></i>BajoBus</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-warning">
+                            <div class="card-header">
+                                	<h4 class="card-title">
+
+						<a data-toggle="collapse" data-parent=".panel-group" href="#novedades">Novedades</a>
+
+					</h4>
+                            </div>
+                            <div id="novedades" class="panel-collapse collapse">
+                                <div>
+                                    <p>Podr&#xE1;s encontrar las novedades en nuestro sistema de transportes
+                                        en nuestros Foros</p>
+                                    <ul class="list-group" style="color: black;">
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Mensajes diarios
+                                        <span class="badge badge-primary badge-pill">12</span>
+                                      </li>
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Publicidad
+                                        <span class="badge badge-primary badge-pill">50</span>
+                                      </li>
+                                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Reviews
+                                        <span class="badge badge-primary badge-pill">99</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-danger">
+                            <div class="card-header">
+                                	<h4 class="card-title">
+
+						<a data-toggle="collapse" data-parent=".panel-group" href="#valoracion">&#xA1;Val&#xF3;ranos!</a>
+
+					</h4>
+                            </div>
+                            <div id="valoracion" class="panel-collapse collapse">
+                                <form class="container" novalidate=""  method="POST" id="myForm">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Email</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="nombre@ejemplo.com" required>
+                                        <div class="valid-feedback">Correcto</div>
+                                        <div class="invalid-feedback">Escribe tu e-mail</div>
+                                    </div>
+                        
+                                
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="inputSuccess1">Nombre</label>
+                                        <input type="text" class="form-control" name="i1" id="inputSuccess1" required>
+                                        <div class="valid-feedback">Correcto</div>
+                                        <div class="invalid-feedback">Escribe tu nombre</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="inputSuccess2">Apellidos</label>
+                                        <input type="text" class="form-control" name="i2" required id="inputSuccess2">
+                                        <div class="valid-feedback">Correcto</div>
+                                        <div class="invalid-feedback">Escribe tus apellidos</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Valora la experiencia TerraVeteris</label>
+                                        <select class="form-control"
+                                        id="exampleFormControlSelect1">
+                                            <option>Me ha gustado mucho</option>
+                                            <option>Me ha gustado muy mucho</option>
+                                            <option>Me ha gustado en todos los sentidos</option>
+                                            <option>Me ha gustado al nivel de producir m&#xFA;ltiples orgasmos masivos</option>
+                                            <option>Meh..</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">&#xA1;Cu&#xE9;ntanos tu experiencia TerraVeteris!</label>
+                                        <textarea class="form-control"
+                                        id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-secondary" id="btnSubmit">Enviar tu opinión</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="">Anterior</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="">2</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="">3</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="">Siguiente</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer text-white-50 bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6">
+                            	<h4>¿Quiénes somos?</h4>
+                            <p><i>Transportando con eficacia desde 2069</i> ¡La manera más rápida de moverse! <a href="tickets.html">¡Reserva tus entradas</a>!</p>
+                            <p><a href="">Más sobre nosotros <i class="fa fa-long-arrow-right"></i></a>
+                            </p>
+                        </div>
+                        <div class="offset-md-1 col-md-2 col-6">
+                            	<h4>Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="">UniversumVeteris</a>
+                                </li>
+                                <li><a href="">TemporalVeteris</a>
+                                </li>
+                                <li><a href="">SpaceVeteris</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix d-block d-sm-none"></div>
+                        <div class="col-md-2 col-6">
+                            	<h4>+ Info</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="">Sobre nosotros</a>
+                                </li>
+                                <li><a href="">Reddit</a>
+                                </li>
+                                <li><a href="">Blog</a>
+                                </li>
+                                <li><a href="">Twitter</a>
+                                </li>
+                                <li><a href="">Facebook</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='col-md-3 col-md-offset-1 col-sm-4 col-xs-6'>
+                            <h4>Contáctanos</h4>
+                            <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+                                <div class="btn-group" role="group">
+                                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        EMAILS
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="">Thorgrim (DIRECTOR) </a>
+                                        <br>
+                                        <a class="dropdown-item" href="">Manfredo (RECURSOS HUMANOS)</a>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-secondary">Nº Tlf: 69420666</button>
+                                <button type="button" class="btn btn-secondary">Penépolis C/Memelandia nº123</button>
+        
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Latest compiled and minified JavaScript -->
+		</div>
+		<!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+
+    $('#btnModal').click(function() {
+  $('#modalRecomendaciones').modal()
+});
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+$("#btnSubmit").click(function(event) {
+
+// Fetch form to apply custom Bootstrap validation
+var form = $("#myForm")
+
+if (form[0].checkValidity() === false) {
+  event.preventDefault()
+  event.stopPropagation()
+}
+
+form.addClass('was-validated');
+// Perform ajax submit here...
+
+});
+    </script>
+    </body>
+
+</html>
