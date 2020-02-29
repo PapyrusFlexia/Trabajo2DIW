@@ -1,5 +1,7 @@
 @import 'estilos';
 
+// PARTIALS ESTA EN ESTILOS
+
 body {
 	font: 100% Helvetica, sans-serif;
 	color: #333;
@@ -10,7 +12,6 @@ body {
 	background-color: #333;
 	color: white;
 }
-  
   
 
 .features .glyphicon {
@@ -39,20 +40,17 @@ img {
 		background-color:rgb(64, 191, 233);
 }
 	
+.progress-striped.active .progress-bar {
+	-webkit-animation: progress-bar-stripes 2s linear infinite !important;
+	-o-animation: progress-bar-stripes 2s linear infinite !important;
+	animation: progress-bar-stripes 2s linear infinite !important;
 
-	.progress-striped.active .progress-bar {
-		-webkit-animation: progress-bar-stripes 2s linear infinite !important;
-		-o-animation: progress-bar-stripes 2s linear infinite !important;
-		animation: progress-bar-stripes 2s linear infinite !important;
-
-	}
+}
 	
-
-	#scrollstyle{
-		position: relative;
-	}
+#scrollstyle{
+	position: relative;
+}
 	  
-
 ul.nav-pills {
   top: 20px;
 }
@@ -61,7 +59,7 @@ div.col-8 div {
   height: 200px;
 }
 
-//
+// HERENCIA
 
 %links {
 	border: 1px solid #ccc;
@@ -69,38 +67,38 @@ div.col-8 div {
 	color: #333;
   }
   
+.list-unstyled{
+  @extend %links;
+}
   
-  .list-unstyled{
-	@extend %links;
-  }
-  
-  .form-group {
+.form-group {
 	@extend %links;
 	border-color: lightblue;
-  }
+}
 
-  //
+// MIXINS
 
-  @mixin square($p, $m) {
-	padding: $p;
+@mixin square($p, $m) {
+  padding: $p;
 	margin: $m;
 	
-  }
+}
   
-  .form-check-label {
+.form-check-label {
 	@include square(-20px, -10px);
-  }
+}
   
-  .close {
+.close {
 	@include square(-30px, -10px);
-  }
+}
 
-  .checkbox {
+.checkbox {
 	@include square(10px, 10px);
 	border-right: 10px;
-  }
+}
 
-// 
+// VARIABLES Y FUNCIONES
+
 $variable-red: #cc0000;
 $title-font: normal 24px/1.5 'Open Sans', sans-serif;
 
@@ -117,7 +115,9 @@ h1.title {
 	font: $title-font;
   }
 
-  $body: blue;
+// ESTRUCTURA DE CONTROL
+
+$body: blue;
 body {  
   @if $body == white {  
     color: black;  
@@ -125,7 +125,7 @@ body {
     color: white;  
   } @else if $body == blue {  
     color: black;  
-}
+  }
 }
 
 @for $i from 8 through 1 {  
@@ -134,7 +134,7 @@ body {
 		}  
    }
 
-//
+// MAPAS
 
 $buttons: (
   error: (#f65b62, rgb(255, 255, 255)),
