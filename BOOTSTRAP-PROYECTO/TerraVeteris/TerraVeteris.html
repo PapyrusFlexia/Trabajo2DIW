@@ -164,7 +164,7 @@
             </div>
             <!-- TAMAÑOS DE RESPONSIVE BREAKPOINTS -->
             <!-- CARD -->
-            <div class="col-lg-4 col-12 offset-1 offset-sm-0 card text-white bg-warning" style="height: 370px">
+            <div class="col-lg-4 col-12 offset-1 offset-sm-0 card text-white bg-danger" style="height: 370px">
                 <!-- BORDER -->
                 <div class="card-header border border-info"> <i class="fa fa-magic"></i>
                     <h3>Sistemas de Teletransporte TerraVeteris&#xAE;</h3>
@@ -200,7 +200,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="bg-success">
+            <tr class="bg-primary">
                 <th scope="row">1</th>
                 <td>Guarida de Alejandro el Capo</td>
                 <td>14$</td>
@@ -210,7 +210,7 @@
                 <td>ToMordorLand</td>
                 <td>1499.99$</td>
             </tr>
-            <tr class="bg-warning">
+            <tr class="bg-secondary">
                 <th scope="row">3</th>
                 <td>Las Cuevas de los Habitantes de Reddit</td>
                 <td>69420$</td>
@@ -592,7 +592,7 @@
                         <!-- TAMAÑOS DE RESPONSIVE BREAKPOINTS -->
                         <div class="col-lg-3 col-md-4 col-6">
                             <h4>¿Quiénes somos?</h4>
-                            <p><i>Transportando con eficacia desde 2069</i> ¡La manera más rápida de moverse! <a href="tickets.html">¡Reserva tus entradas</a>!</p>
+                            <p><i>Transportando con eficacia desde 2069</i> ¡La manera más rápida de moverse! <a href="">¡Reserva tus entradas</a>!</p>
                             <p><a href="">Más sobre nosotros <i class="fa fa-long-arrow-right"></i></a>
                             </p>
                         </div>
@@ -670,8 +670,6 @@
             });
 
             $("#btnSubmit").click(function(event) {
-
-                // Fetch form to apply custom Bootstrap validation
                 var form = $("#myForm")
 
                 if (form[0].checkValidity() === false) {
@@ -680,8 +678,6 @@
                 }
 
                 form.addClass('was-validated');
-                // Perform ajax submit here...
-
             });
         </script>
 </body>

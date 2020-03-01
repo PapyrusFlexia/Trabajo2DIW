@@ -58,9 +58,16 @@ TerraVeretis.html
 
 ## Funcionalidades
 
-* 
-* 
-* 
+* En "Sobre nosotros" dentro del header puedes encontrar un Dropdown.
+* Puedes cerrar la alerta del descuento.
+* En los términos de uso y condiciones se encuentra un popover.
+* La reserva de entradas redirige a otra página.
+* El botón de resevar entradas con facilidad te redirige a otra página.
+* El nav de planear tu viaje te permite acceder a más utilidades de la página.
+* En recomendaciones, puedes pulsar el botón de conseguir la mejor oferta, lo que te dirigirá a un modal, enviar los datos personales dispone de un tooltip.
+* Puedes abrir las cartas de "sistemas operativos", "novedades" y "valóranos".
+* El form de "valóranos" esta validado.
+* "EMAILS" del grupo de botones del footer dispone de un dropdown.
 
 ## Versiones
 
