@@ -7,7 +7,7 @@ TerraVeteris es un proyecto de la compañia UniversumVeteris, la cual se basa en
 El contenido de la página se encuentra en el siguiente archivo
 
 ```
-TerraVeretis.html
+TerraVeteris.html
 ```
 
 ## Componentes SASS - main.scss
